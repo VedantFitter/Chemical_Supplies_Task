@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0efef; 
+}
+
+.header-toolbar {
+    display: flex;
+    justify-content: space-between; /* Space between heading and toolbar */
+    align-items: center; 
+}
+
+h1 {
+    margin: 0; 
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.toolbar {
+    display: flex;
+    gap: 10px; 
+}
+
+button {
+    padding: 5px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    background-color: #f0efef;
+}
+
+table {
+    width: 100%; /* border-collapse:separate !important; Ensures borders collapse for a clean look */
+    background-color: white;
+    border: 2px solid rgb(190, 180, 180) !important; /* Outer border */ 
+    border-collapse: separate;  
+}
+
+table, th, td {
+    color: rgb(35, 34, 34) !important;  
+}
+
+th, td {
+    padding: 8px 12px;
+    text-align: left;
+   border: none !important;              
+    vertical-align: top;                 /* Align text at the top for both th and td */
+}
+
+th {
+    background-color: #f0efef !important; 
+    color: white; 
+    font-weight: bold;
+    height: 100px !important;
+}
+
+/* Add border for specific columns */
+td:nth-child(5),   /* Density */
+td:nth-child(6),  /* Viscosity */
+td:nth-child(10) {   /* Quantity */
+    border: 2px solid rgb(190, 180, 180) !important;  
+}
+
+/* Add a vertical border between "Chemical Name" and "Vendor" */
+th:nth-child(3),
+td:nth-child(3) {
+    border-right: 2px solid rgb(190, 180, 180) !important;   /* Right border for the "Chemical Name" column */
+}
+
+td:focus {
+    outline: 2px solid rgb(59, 59, 217);  
+}
+
+th {
+    cursor: pointer;   
+}
